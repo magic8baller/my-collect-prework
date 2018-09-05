@@ -6,8 +6,9 @@ def my_collect(array)
     new_array << yield(array[i])
     i += 1
   end
+  if array
   array
 end
 
-array1.my_collect { |item| item.split(' ').first }
-array2.my_collect { |item| item.upcase }
+my_collect(array1) { |item| item.split(' ').first }
+my_collect(array2) { |item| item.upcase }
