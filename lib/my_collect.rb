@@ -9,5 +9,5 @@ def my_collect(array)
   array
 end
 
-my_collect(array1) { |item| item.split(' ').first }
-my_collect(array2) { |item| item.upcase }
+my_collect(array) { |item| item.split(' ').first }
+my_collect(array) { |item| item.upcase }
