@@ -10,4 +10,3 @@ def my_collect(array)
 end
 
 my_collect(array) { |item| item.split(' ').first }
-my_collect(array) { |item| item.upcase }
